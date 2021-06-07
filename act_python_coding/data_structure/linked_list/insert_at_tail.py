@@ -1,5 +1,5 @@
-from .link.LinkedList import LinkedList
-from .link.Node import Node
+from .link.myLinkedList import LinkedList
+from .link.myNode import Node
 
 
 def insert_at_tail(lst, value):
