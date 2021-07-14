@@ -11,8 +11,8 @@ def removeDuplicatesFromLinkedList(linkedList):
         while nextDistinctNode is not None and nextDistinctNode.value == currentNode.value:
             nextDistinctNode = nextDistinctNode.next
 
-        currentNode.next = nextDistinctNode
         currentNode = nextDistinctNode
+        currentNode.next = nextDistinctNode
     return linkedList
 
 # removeDuplicatesFromLinkedList([123123])

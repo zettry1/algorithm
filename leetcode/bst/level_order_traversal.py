@@ -52,6 +52,7 @@ def levelOrderTraversal(root):
             if node.right:
                 queue.append(node.right)
             cur_level.append(node.val)
+
         res.append(cur_level)
     print(res)
     return res
