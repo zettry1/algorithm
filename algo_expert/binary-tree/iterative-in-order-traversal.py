@@ -1,4 +1,4 @@
-#O(n)|O(d)
+#O(n)|O(1)
 def iteractiveInOrderTraverse(tree,callback):
     previousNode = None
     currentNode = tree
@@ -14,3 +14,5 @@ def iteractiveInOrderTraverse(tree,callback):
             nextNode = currentNode.right if currentNode.right is not None else currentNode.parent
         else:
             nextNode = currentNode.parent
+        previousNode = currentNode
+        currentNode = nextNode
